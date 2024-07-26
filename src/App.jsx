@@ -3,7 +3,6 @@ import { Header } from "./components/header/Header";
 import { Home } from "./components/home/Home";
 import { Tours } from "./components/tours/Tours";
 import { About } from "./components/about/About";
-// import { Advantages } from "./components/advantages/Advantages";
 import { Experience } from "./components/experience/Experience";
 import { Testimonial } from "./components/testimonials/Testimonial";
 import { Blog } from "./components/blog/Blog";
@@ -18,7 +17,6 @@ function App() {
       <Home />
       <Tours />
       <About />
-      {/* <Advantages /> */}
       <Experience />
       <Testimonial />
       <Blog />
