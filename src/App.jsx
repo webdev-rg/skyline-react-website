@@ -8,7 +8,8 @@ import { Testimonial } from "./components/testimonials/Testimonial";
 import { Blog } from "./components/blog/Blog";
 import { Gallery } from "./components/gallery/Gallery";
 import { Brands } from "./components/brands/Brands";
-// import { Contact } from "./components/contact/Contact";
+import { Contact } from "./components/contact/Contact";
+import { Footer } from "./components/footer/Footer";
 
 function App() {
   return (
@@ -21,8 +22,9 @@ function App() {
       <Testimonial />
       <Blog />
       <Gallery />
-      {/* <Contact /> */}
       <Brands />
+      <Contact />
+      <Footer />
     </>
   );
 }
