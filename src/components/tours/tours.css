@@ -1,0 +1,129 @@
+.tours-container {
+  width: 100%;
+  padding: 8rem 15rem;
+  background-color: #fff;
+}
+.tours-container .tours-content {
+  width: 100%;
+}
+.tours-content h1 {
+  color: #29293a;
+  text-align: center;
+  font-size: 5rem;
+}
+
+.tours-content .tour-card-container {
+  width: 100%;
+  margin-top: 6rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.tour-card-container .tour-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.tour-card .image {
+  width: 100%;
+  height: 28rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+.tour-card .image img {
+  width: 100%;
+  height: 100%;
+  /* border-radius: 1rem; */
+  object-fit: cover;
+}
+.tour-card .duration-price {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.duration-price h4 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #828590;
+}
+.duration-price p {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #0ab193;
+}
+.tour-card .title {
+  width: 100%;
+}
+.title h2 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: #29293a;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.title h2:hover {
+  color: #0ab193;
+}
+
+.tours-content .view-all-tour {
+  width: 100%;
+  margin-top: 6rem;
+  text-align: center;
+}
+.view-all-tour button {
+  width: 24rem;
+  height: 6rem;
+  border: 0;
+  outline: 0;
+  border-radius: 0.5rem;
+  background-color: #0ab193;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* Responsive Design */
+
+@media screen and (max-width: 1024px) {
+  .tours-container {
+    width: 100%;
+    padding: 5rem 5rem;
+  }
+  .tour-card .duration-price h4 {
+    font-size: 1.4rem;
+  }
+  .tour-card .duration-price p {
+    font-size: 1.6rem;
+  }
+  .tour-card-container .tour-card .title h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tours-container {
+    padding: 5rem 3rem;
+  }
+  .tours-content .tour-card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .tours-container {
+    padding: 5rem 2rem;
+  }
+  .tours-content .tour-card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .tour-card .duration-price h4 {
+    font-size: 1.6rem;
+  }
+  .tour-card-container .tour-card .title h2 {
+    font-size: 2rem;
+  }
+}

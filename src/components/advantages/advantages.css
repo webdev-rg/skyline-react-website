@@ -1,0 +1,28 @@
+.advantages-container {
+  width: 100%;
+  padding: 5rem 15rem;
+  background-color: #fff;
+}
+.advantages-container .advantages-content {
+  width: 100%;
+  text-align: center;
+}
+
+.advantages-content h1 {
+  font-size: 4rem;
+  color: #29293a;
+}
+.advantages-content p {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #29293a;
+  margin-top: 1.5rem;
+}
+
+.advantages-content .advantage-card-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+  margin-top: 6rem;
+}

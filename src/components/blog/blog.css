@@ -1,0 +1,94 @@
+.blog-container {
+  width: 100%;
+  padding: 8rem 15rem;
+  background-color: #fff;
+}
+.blog-container h1 {
+  font-size: 5rem;
+  text-align: center;
+  color: #29293a;
+}
+
+.blog-container .blog-card-container {
+  width: 100%;
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+
+.blog-card-container .blog-card {
+  width: 100%;
+  height: 35rem;
+  border-radius: 1.5rem;
+}
+
+.blog-card .blog-content {
+  width: 100%;
+  height: 100%;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.blog-content .btn span {
+  padding: 0.6rem 2rem;
+  background-color: #0ab193;
+  color: #fff;
+  font-size: 1.6rem;
+  border-radius: 0.5rem;
+}
+
+.blog-content .blog-text {
+  width: 100%;
+}
+.blog-text p {
+  font-size: 1.4rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+.blog-text h2 {
+  font-size: 2.4rem;
+  color: #fff;
+}
+
+.blog-container .view-blog-btn {
+  width: 100%;
+  margin-top: 6rem;
+  text-align: center;
+}
+.view-blog-btn button {
+  width: 24rem;
+  height: 6rem;
+  border: 0;
+  outline: 0;
+  border-radius: 0.5rem;
+  background-color: #0ab193;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* Responsive Design */
+
+@media screen and (max-width: 1024px) {
+  .blog-container {
+    padding: 8rem 5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .blog-container {
+    padding: 8rem 3rem;
+  }
+  .blog-container .blog-card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .blog-card-container .blog-card h2 {
+    font-size: 2rem;
+  }
+}
